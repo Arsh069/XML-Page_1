@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_dots" />
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_toLeftOf="@id/share"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_add" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_toLeftOf="@id/add"
+                android:src="@drawable/ic_share" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_back" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+
+                android:layout_below="@id/arrow"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_logo"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/arrow"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@id/logo"
+                android:text="dscKiet"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="100dp"
+                android:text="progress-tracker"
+                android:textColor="@android:color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="148dp"
+                android:text="To maintain the track of progress of our lazy\ndevelopers"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+
+                />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="225dp"
+                android:src="@drawable/ic_star" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="220dp"
+                android:text="4 stars"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15sp"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="225dp"
+                android:src="@drawable/ic_fork" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="220dp"
+                android:text="24 forks"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="260dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="STAR"
+                        android:textColor="#3399ff"
+                        android:textSize="20sp"></TextView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="18dp"
+                    android:layout_marginHorizontal="38dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/ic_butstar"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="260dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="WATCH"
+                        android:textColor="#3399ff"
+                        android:textSize="20sp"></TextView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="29sp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/ic_eye"></ImageView>
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="135dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/ic_down"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="320dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal">
+
+                    <TextView
+                        android:id="@+id/issue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="52sp"
+                        android:text="Issues"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="385dp"
+                        android:text="0"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/pullreq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/issue"
+                        android:layout_marginHorizontal="52sp"
+                        android:layout_marginTop="30dp"
+                        android:text="Pull Requests"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginTop="58dp"
+                        android:layout_toRightOf="@id/pullreq"
+                        android:text="3"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/watch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pullreq"
+                        android:layout_marginHorizontal="52sp"
+                        android:layout_marginTop="32dp"
+                        android:text="Watchers"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/four"
+                        android:layout_marginLeft="387dp"
+                        android:layout_marginTop="28dp"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_issue"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="14dp"
+                        android:src="@drawable/ic_issue"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/pull_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/img_issue"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="28dp"
+                        android:src="@drawable/ic_request"></ImageView>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/pull_img"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="28dp"
+                        android:src="@drawable/ic_watch"></ImageView>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="482dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal">
+
+                    <TextView
+                        android:id="@+id/master"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="34sp"
+                        android:layout_marginTop="10dp"
+                        android:text="master"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="236dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/master"
+                        android:text="CHANGE"
+                        android:textColor="#3399ff"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/browse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/master"
+                        android:layout_marginLeft="34sp"
+                        android:layout_marginTop="30dp"
+                        android:text="Browse code"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/browse"
+                        android:layout_marginLeft="34sp"
+                        android:layout_marginTop="30dp"
+                        android:text="Commits"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp">
+                    </TextView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15sp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="17dp"
+                    android:src="@drawable/ic_fork" />
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="655dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Progress Tracker"
+                        android:textColor="@android:color/black"
+                        android:textSize="30dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="10dp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/update_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Update your daily work here. Sorry \ndevs^) "
+                        android:layout_marginHorizontal="14dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:layout_marginTop="65dp">
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/merging_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow this while merging PR"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_below="@id/update_text"
+                        android:layout_marginTop="12dp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/pr_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:text="#(inbox of PR) from Github Handle"
+                        android:layout_below="@id/merging_text"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="34dp"
+                        android:textStyle="bold">
+                    </TextView>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#1 from goelakash79"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/pr_text"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="29dp">
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_rightarrow"
+                        android:layout_marginTop="170dp"
+                        android:layout_marginHorizontal="14dp"
+                        android:layout_marginBottom="10dp">
+                    </ImageView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
