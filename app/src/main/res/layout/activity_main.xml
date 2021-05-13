@@ -222,9 +222,10 @@
                     </TextView>
 
                     <TextView
+                        android:id="@+id/one"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="365dp"
+                        android:layout_marginLeft="366dp"
                         android:text="0"
                         android:textSize="20sp">
 
@@ -246,11 +247,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="140dp"
-                        android:layout_marginTop="58dp"
+                        android:layout_below="@id/one"
+                        android:layout_marginTop="30dp"
                         android:layout_toRightOf="@id/pullreq"
                         android:text="3"
                         android:textSize="20sp"
-                        android:textStyle="bold"></TextView>
+                        ></TextView>
 
                     <TextView
                         android:id="@+id/watch"
@@ -267,10 +269,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/four"
-                        android:layout_marginLeft="368dp"
+                        android:layout_marginLeft="367dp"
                         android:layout_marginTop="28dp"
                         android:text="1"
-                        android:textColor="@android:color/black"
                         android:textSize="20sp">
 
                     </TextView>
@@ -426,7 +427,7 @@
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="#1 from goelakash79"
+                        android:text="#1 from goelaakash79"
                         android:textColor="@android:color/darker_gray"
                         android:textSize="18sp"
                         android:textStyle="bold"
@@ -436,15 +437,34 @@
                         android:layout_marginLeft="29dp">
                     </TextView>
                     <ImageView
-                        android:layout_width="15dp"
+                        android:id="@+id/rarrow"
+                        android:layout_width="12dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_rightarrow"
                         android:layout_marginTop="170dp"
-                        android:layout_marginHorizontal="14dp"
-                        android:layout_marginBottom="10dp">
-                    </ImageView>
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginBottom="10dp"/>
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_line"
+                        android:layout_below="@id/rarrow"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="1dp"/>
 
                 </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="#F5F5F5">
+
+                    </View>
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
